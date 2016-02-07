@@ -1,0 +1,17 @@
+fileindex.sh is a simple command line tool for calculating the top n words
+in an arbitrary number of files.
+
+Ensure that fileindex.sh is executable, and use as follows:
+
+Usage: path/fileindex.sh [-n] path/FILE1 path/FILE2 ...
+
+Where paths are the paths to fileindex.sh, and each file you wish to use in
+the count.
+
+    -n is an optional flag given to fileindex.sh specifying the number of 
+    top n words you would like to calculate. When unspecified fileindex.sh 
+    defaults to 10
+
+Example:
+
+`./fileindex.sh -7 book1.txt book2.txt book3.txt`
