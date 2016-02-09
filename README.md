@@ -11,6 +11,7 @@ To use the tool simply save the fileindexer directory in a place convenient
 for usage, such as the directory containing the files you would like to pass as arguments.
 
 Then:
+
 `cd fileindexer`
 
 Ensure that fileindex.sh, tokenizer.sh, and counter.sh  have executable 
@@ -41,6 +42,7 @@ Once you have completed this setup, follow the steps for *nix environments.
 I have included some unittests in this repo.
 
 `cd fileindexer`
+
 `./unittest.sh`
 
 will run these unittests using the data in fileindexer/tests
