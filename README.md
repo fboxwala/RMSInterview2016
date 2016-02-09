@@ -7,16 +7,20 @@ of plaintext files as arguments, and will print the top ten words that occur
 in them.
 
 ### *nix Environment 
-To use the tool simply save fileindex.sh in a place convenient for usage, such
-as the directory containing the files you would like to pass as arguments.
+To use the tool simply save the fileindexer directory in a place convenient 
+for usage, such as the directory containing the files you would like to pass as arguments.
 
-Ensure that fileindex.sh has executable permissions:
+Then:
+`cd fileindexer`
 
-`chmod u+x fileindex.sh`
+Ensure that fileindex.sh, tokenizer.sh, and counter.sh  have executable 
+permissions:
+
+`chmod u+x fileindex.sh tokenizer.sh counter.sh`
 
 Then simply run the script:
 
-`./fileindex.sh [-n] FILE1 FILE2 ...`
+`./fileindex.sh [-n] PATH/FILE1 PATH/FILE2 ...`
 
 For full usage and instructions, try:
 
@@ -34,10 +38,12 @@ Once you have completed this setup, follow the steps for *nix environments.
 
 ### Testing
 
-I have included some small correctness tests in this repo.
+I have included some unittests in this repo.
 
-`./test.sh` will output the results of running my script individually
-on the four text files located in the tests directory.
+`cd fileindexer`
+`./unittest.sh`
+
+will run these unittests using the data in fileindexer/tests
 
 These public domain text files were retrieved from [Project Gutenberg](http://gutenburg.org)
 and top ten words for comparison were calculated on [WriteWords](http://www.writewords.org.uk/word_count.asp).
